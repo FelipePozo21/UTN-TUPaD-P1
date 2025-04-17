@@ -1,5 +1,4 @@
 from math import pi
-
 ## actividad 1 
 
 def imprimir_hola_mundo():
