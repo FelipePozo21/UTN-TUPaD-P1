@@ -7,9 +7,9 @@ def act_1(n):
     else:
         return n * act_1(n - 1)
     
-# actividad_1_input = int(input("Ingrese el numero que quieras calcular el factorial: "))
+actividad_1_input = int(input("Ingrese el numero que quieras calcular el factorial: "))
 
-# print(act_1(actividad_1_input))
+print(act_1(actividad_1_input))
 
 ## actividad 2
 
@@ -20,11 +20,11 @@ def act_2(n):
         return act_2(n - 2) + act_2(n - 1)
     
 
-# actividad_2_input = int(input("Ingrese la posicion de fibonacci: "))
+actividad_2_input = int(input("Ingrese la posicion de fibonacci: "))
 
-## bucle que muestra cada numero de la secuencia fibo
-# for i in range(actividad_2_input):
-#     print(act_2(i))
+# bucle que muestra cada numero de la secuencia fibo
+for i in range(actividad_2_input):
+    print(act_2(i))
 
 ## actividad 3
 
@@ -35,7 +35,7 @@ def act_3(n,m):
     else:
         return n * act_3(n, m - 1)
     
-# print(act_3(16,12))
+print(act_3(16,12))
 
 ## actividad 4
 
@@ -46,7 +46,7 @@ def act_4(n, cadena=""):
         cadena = str(n % 2) + cadena
         return act_4(int(n/2), cadena)
     
-# print(act_4(8))
+print(act_4(8))
 
 ## actividad 5
 
@@ -60,7 +60,7 @@ def es_palindromo(cadena):
         return False
     
 
-# print(es_palindromo("abccba"))
+print(es_palindromo("abccba"))
 
 ## actividad 6
 
@@ -71,7 +71,7 @@ def suma_digitos(n):
         ## verifica el ultimo digito de n con el % y con // lo saca
         return n % 10 + suma_digitos(n // 10)
 
-# print(suma_digitos(1234))
+print(suma_digitos(1234))
 
 ## actividad 7
 
@@ -81,7 +81,7 @@ def contar_bloques(n):
     else:
         return n + contar_bloques(n - 1)
     
-# print(contar_bloques(4))
+print(contar_bloques(4))
 
 ## actividad 8
 
